@@ -1,6 +1,7 @@
 "use client";
-export default function error() {
+export default function error({error}:{error:Error}) {
+
   return (
-    <div>error occurs.</div>
+    <div>Error:{error.message}</div>
   )
 }
